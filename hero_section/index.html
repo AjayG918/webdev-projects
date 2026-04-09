@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!--modal box html-->
+
+  <div class="modal">
+  <div class="modal-box">
+    <span class="close">&times;</span>
+    <p class="modal-message">The server is down right now, try again later.</p>
+  </div>
+  </div>
+
+<!--Nav bar-->
+
+    <nav class="navigation">
+        <div class="logo"><img src="./Minecraftlogo.svg" alt="Minecraft Logo"></div>
+        <ul class="menu">
+            <li><a href="#">GAMES</a></li>
+            <li><a href="#">SHOP</a></li>
+            <li><a href="#">NEWS</a></li>
+            <li><a href="#">SUPPORT</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <img src="./minecrafthero.png" alt="MINECRAFT">
+        <div class="hero-text">
+            <h1>Play Minecraft today</h1>
+            <p>A new weapon to wield, mounts to tame, foes to face, and strategies to master. Play Mounts of Mayhem today in Java and Bedrock Edition!</p>
+        </div>
+    </section>
+
+<!--Main section-->
+
+    <main class="info">
+        <h2>Discover our games</h2>
+
+        <p>
+         <button class="bundle-btn">
+          All 3 Minecraft Games with the Triple Bundle
+         </button>
+        </p>
+
+        <div class="card-container">
+
+        <div class="card">
+            <img src="./minecraftjava.jpg" alt="Minecraft Java">
+            <h3>Minecraft</h3>
+            <p class="gameinfo">Sandbox Survival, Adventure Single-player + Multiplayer.</p>
+        </div>
+
+        <div class="card">
+            <img src="./minecraftdungeons.webp" alt="Minecraft Dungeons">
+            <h3>Minecraft Dungeons</h3>
+            <p class="gameinfo">Dungeon Crawl, Action RPG Single-player + Multiplayer</p>
+        </div>
+
+        <div class="card">
+            <img src="./minecraftlegends.webp" alt="Minecraft Legends">
+            <h3>Minecraft Legends</h3>
+            <p class="gameinfo">Action RPG, Strategy Single-player + Multiplayer</p>
+        </div>
+
+        </div>
+    </main>#
+
+<!--Footer-->
+
+<footer class="footer-notes">
+
+<div class="footer-container">
+
+<div class="footer-column">
+<h4>Games</h4>
+<a href="#">Minecraft</a>
+<a href="#">Minecraft Dungeons</a>
+<a href="#">Minecraft Legends</a>
+</div>
+
+<div class="footer-column">
+<h4>Company</h4>
+<a href="#">About</a>
+<a href="#">Careers</a>
+<a href="#">News</a>
+</div>
+
+<div class="footer-column">
+<h4>Support</h4>
+<a href="#">Help Center</a>
+<a href="#">Contact</a>
+<a href="#">Community</a>
+</div>
+
+<div class="trademark">
+
+<img src="./Minecraftlogo.svg" alt="Minecraft Logo">
+
+<p>© 2026 Mojang Studios. Minecraft™ is a trademark of Mojang Studios.</p>
+
+</div>
+
+</footer>
+
+<!--script for opening modal-->
+
+<script>
+
+var modal = document.querySelector(".modal");
+var button = document.querySelector(".bundle-btn");
+var closeBtn = document.querySelector(".close");
+
+button.addEventListener('click',function(){modal.style.display = "block";})
+closeBtn.addEventListener('click', function(){modal.style.display = "none";}) 
+
+
+</script>
+
+</body>
+</html>
